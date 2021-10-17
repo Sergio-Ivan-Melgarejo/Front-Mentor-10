@@ -1,0 +1,123 @@
+:root{
+    /* ### Primary */
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    /* ### Neutral */
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+Body{
+    Font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background: var(--Light-Gray);
+    color: var(--Grayish-Blue);
+    /*for center the card*/
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main{
+    background: #fff;
+    width: 350px;
+    margin: 20px auto;
+    transition: width 350ms;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container__section{
+    padding: 30px;
+}
+.container__h2{
+    color: var(--Light-Gray);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.container__h2-1{
+    color: var(--Cyan);
+}
+.container__h3{
+    color: var(--Bright-Yellow);
+    margin: 30px 0 20px;
+    font-size: 1em;
+}
+.container__text{
+    font-size: .9em;
+    line-height: 1.9em;
+    font-weight: lighter;
+    color: hsl(216, 24%, 78%)
+}
+.section-2{
+    background: var(--Cyan);
+}
+.text-2{
+    margin: 25px 0;
+    line-height: 2.5em;
+    font-size: .9em;
+    color: hsl(216, 33%, 79%);
+}
+.text-2__span-1{
+    color: var(--Light-Gray);
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: 0 10px 0 0;
+    position: relative;
+    top: 5px;
+}
+.text-2__span-2{
+    color: var(--Light-Gray);
+}
+.container__button{
+    color: var(--Light-Gray);
+    background: var(--Bright-Yellow);
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    margin: auto;
+    text-align: center;border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+}
+
+.section-3{
+    background: hsl(179, 54%, 58%);
+}
+.text-3{
+    color: var(--Light-Gray);
+    padding: 20px 0 0;
+    font-size: .8em;
+}
+
+.attribution { font-size: 11px; text-align: center; color: #222;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 700px){
+    .main{
+        width: 700px;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-1{
+        width: 100%;
+    }
+    .section-2, .section-3{
+        width: 50%;
+        display: inline-block;
+    }
+    .container__section{
+        padding: 50px;
+    }
+}
+/* 
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
